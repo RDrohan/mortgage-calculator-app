@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Mortgage Calculator Result
+{% endblock %}
+
+{% block content %}
+    <div class="centered">
+        <h1 class="heading">Mortgage Calculator Result</h1>
+        <p>Your monthly payment for borrowing <span class="bold">€{{loan_amount}}</span> at <span class="bold">{{interest_rate}}%</span> for <span class="bold">{{loan_term_years}}</span> years is</p>
+        <p class="result">€{{ monthly_payment }}</p>
+        <button class="button-primary" onclick="location.href='{% url 'mortgage_calculator' %}'">Calculate Again</button>
+    </div>
+{% endblock %}

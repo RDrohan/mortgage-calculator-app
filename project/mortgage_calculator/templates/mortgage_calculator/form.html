@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Mortgage Calculator Result
+{% endblock %}
+
+{% block content %}
+    <h1 class="heading">Mortgage Calculator</h1>
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="row">
+            {{ field.label_tag }}
+            {{ field }}
+            {{ field.errors }}
+        </div>
+        {% endfor %}
+        <input class="button-primary" type="submit" value="Calculate">
+    </form>
+{% endblock %}

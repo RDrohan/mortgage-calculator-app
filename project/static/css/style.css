@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pathway Gothic One", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container  {
+  min-width: 500px;
+  padding: 2rem;
+}
+
+.heading {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.result {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 16px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit], button {
+  width: 100%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover {
+  background-color: #45a049;
+}
+
+.errorlist {
+  list-style-type: none;
+  margin: 12px 0;
+}
+
+.errorlist li {
+  font-size: large;
+  font-weight: bold;
+  color: #04AA6D;
+}
